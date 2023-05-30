@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Salon Inana</title>
+</head>
+
+<body id="booking-bg">
+    <div class='container'>
+        <header>
+            <div id="navigation-bar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="logo"><i class="fas fa-cut"></i> Salon Inana</a></li>
+                        <li><a href=services.html>Services</a></li>
+                        <li><a href=calendar.html>Booking</a></li>
+                        <a href="#" id="menu-icon"></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form action="!#" method="post">
+                <fieldset>
+                    <legend><span class="number">1</span>Your basic details</legend>
+                    <label for="name">Name*:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Firstname" required
+                        pattern="[a-zA-Z0-9]+">
+
+                    <label for="mail">Email*:</label>
+                    <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+
+                    <label for="tel">Contact Num:</label>
+                    <input type="tel" id="tel" placeholder="Include country code" name="user_num">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><span class="number">2</span>Appointment Details</legend>
+                    <label for="appointment_for">Appointment for*:</label>
+                    <select id="appointment_for" name="appointment_for" required>
+                        <option value="color">Coloring</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="treatment">Treatment</option>
+                    </select>
+                    <label for="appointment_description">Additional info:</label>
+                    <textarea id="appointment_description" name="appointment_description"
+                        placeholder="I wish to go from brunette to blonde."></textarea>
+                    <label for="date">Date*:</label>
+                    <input type="date" name="date" value="" required></input>
+                    <br>
+                    <label for="time">Time*:</label>
+                    <input type="time" name="time" value="" required></input>
+                    <br>
+                    <label for="duration">How Long? (Please consult us if unsure)</label>
+                    <input type="radio" name="duration" value="30" checked> 30 min
+                    <input type="radio" name="duration" value="60"> 60 min
+                    <input type="radio" name="duration" value="90"> 90 min
+                    <input type="radio" name="duration" value="more"> more
+                </fieldset>
+                <button type="submit">Book</button>
+            </form>
+        </main>
+
+</body>
+
+</html>
